@@ -6,10 +6,15 @@ spring:
     url: jdbc:postgresql://localhost:5433/microservices
     username: postgres
     password: root
+  application:
+    name: hotel-service
 
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
 
-
+eureka:
+  client:
+    serverUrl:
+      defaultZone: http://localhost:8761/eureka
